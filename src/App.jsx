@@ -1,17 +1,13 @@
-import { useState } from 'react'
 import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
+import ContactList from './components/contactList';
+ function App() {
+  
 
   return (
     <>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      
+      <ContactList />
     </>
-  )
-}
+  );
+};
 
 export default App
